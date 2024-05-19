@@ -52,8 +52,8 @@ struct LoginView: View {
                 
                 //Sign In
                 VStack{
-                    Text("New Round Here?")
-                    NavigationLink("Create An Account", destination: RegisterView())
+                    Text("New Around Here?").font(.system(size: 19))
+                    NavigationLink("Create An Account", destination: RegisterView()).font(.system(size: 16))
                     
                 }.padding(.bottom)
                 

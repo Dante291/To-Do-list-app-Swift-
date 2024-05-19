@@ -38,11 +38,11 @@ struct RegisterView: View {
                         .cornerRadius(5)
                     Button(action: {}, label: {
                         ZStack{
-                            RoundedRectangle(cornerRadius: 10).foregroundColor(Color.blue)
+                            RoundedRectangle(cornerRadius: 10).foregroundColor(Color.green)
                             Text("Sign In").foregroundColor(Color.white)
                         }}).padding()
                 }
-            }.offset(y:-100)
+            }.offset(y:-60)
                 .background(colorScheme == .dark ? Color.black : Color.white)
                 .scrollContentBackground(.hidden)
             
