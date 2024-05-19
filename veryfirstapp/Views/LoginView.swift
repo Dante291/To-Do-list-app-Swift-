@@ -15,7 +15,7 @@ struct LoginView: View {
     
     
     var body: some View {
-        NavigationView{
+        
             VStack{
                 //header
                 ZStack{
@@ -60,7 +60,6 @@ struct LoginView: View {
                 Spacer()
             }
         }
-    }
 }
 
 struct LoginView_Previews: PreviewProvider {
