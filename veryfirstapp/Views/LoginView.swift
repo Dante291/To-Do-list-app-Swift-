@@ -31,7 +31,10 @@ struct LoginView: View {
                 
                 //logIn form
                 Form {
-                    Section {
+                    
+                        if !viewModel.errorMessage.isEmpty {
+                            Text(viewModel.errorMessage).foregroundColor(Color.red)
+                        }
                         TextField("Email Address", text: $viewModel.email)
                             .padding()
                             .background(Color.gray     .opacity(0.2))
@@ -40,12 +43,12 @@ struct LoginView: View {
                             .padding()
                             .background(Color.gray.opacity(0.2))
                             .cornerRadius(5)
-                        Button(action: {}, label: {
+                        Button(action: {viewModel.LogIn()}, label: {
                             ZStack{
                                 RoundedRectangle(cornerRadius: 10).foregroundColor(Color.blue)
                                 Text("Log In").foregroundColor(Color.white)
                             }}).padding()
-                    }
+                    
                 }.background(colorScheme == .dark ? Color.black : Color.white)
                     .scrollContentBackground(.hidden)
                 
