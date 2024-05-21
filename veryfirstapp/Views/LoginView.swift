@@ -9,8 +9,7 @@ import SwiftUI
 
 struct LoginView: View {
     
-    @State var email = ""
-    @State var password = ""
+    @StateObject var viewModel = LogInViewModel()
     @Environment(\.colorScheme) var colorScheme
     
     
@@ -33,11 +32,11 @@ struct LoginView: View {
                 //logIn form
                 Form {
                     Section {
-                        TextField("Email Address", text: $email)
+                        TextField("Email Address", text: $viewModel.email)
                             .padding()
                             .background(Color.gray     .opacity(0.2))
                             .cornerRadius(5)
-                        SecureField("Password", text: $password)
+                        SecureField("Password", text: $viewModel.password)
                             .padding()
                             .background(Color.gray.opacity(0.2))
                             .cornerRadius(5)
