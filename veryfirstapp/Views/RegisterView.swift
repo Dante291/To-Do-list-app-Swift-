@@ -1,13 +1,13 @@
 import SwiftUI
 struct RegisterView: View {
-    @State var name=""
-    @State var username=""
-    @State var password=""
+    @StateObject var viewModel = RegisterViewModel()
     @Environment(\.colorScheme) var colorScheme
     
     
     
     var body: some View {
+        
+        
         
         VStack{
             ZStack{
@@ -24,19 +24,25 @@ struct RegisterView: View {
             //registration body
             Form {
                 Section {
-                    TextField("Your Name", text: $name)
+                    if !viewModel.errorMessage.isEmpty {
+                        Text(viewModel.errorMessage)
+                            .lineLimit(1).foregroundColor(Color.red)
+                    }
+                    TextField("Your Name", text: $viewModel.name)
                         .padding()
                         .background(Color.gray     .opacity(0.2))
                         .cornerRadius(5)
-                    TextField("Your Email Address", text: $username)
+                    TextField("Your Email Address", text: $viewModel.email)
                         .padding()
                         .background(Color.gray     .opacity(0.2))
                         .cornerRadius(5)
-                    SecureField("Password", text: $password)
+                    SecureField("Password", text: $viewModel.password)
                         .padding()
                         .background(Color.gray.opacity(0.2))
                         .cornerRadius(5)
-                    Button(action: {}, label: {
+                    Button(action: {
+                        viewModel.signIn()
+                    }, label: {
                         ZStack{
                             RoundedRectangle(cornerRadius: 10).foregroundColor(Color.green)
                             Text("Sign In").foregroundColor(Color.white)
