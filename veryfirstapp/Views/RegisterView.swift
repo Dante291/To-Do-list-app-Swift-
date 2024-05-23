@@ -28,7 +28,7 @@ struct RegisterView: View {
                         .padding()
                         .background(Color.gray     .opacity(0.2))
                         .cornerRadius(5)
-                    TextField("Your UserName", text: $username)
+                    TextField("Your Email Address", text: $username)
                         .padding()
                         .background(Color.gray     .opacity(0.2))
                         .cornerRadius(5)

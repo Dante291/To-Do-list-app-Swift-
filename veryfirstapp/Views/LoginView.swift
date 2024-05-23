@@ -33,7 +33,8 @@ struct LoginView: View {
                 Form {
                     
                         if !viewModel.errorMessage.isEmpty {
-                            Text(viewModel.errorMessage).foregroundColor(Color.red)
+                            Text(viewModel.errorMessage)
+                                .lineLimit(1).foregroundColor(Color.red)
                         }
                         TextField("Email Address", text: $viewModel.email)
                             .padding()

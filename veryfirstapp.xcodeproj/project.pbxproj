@@ -13,6 +13,8 @@
 		1F2099332BF881A5006BC4FD /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1F2099322BF881A5006BC4FD /* FirebaseFirestoreSwift */; };
 		1F3C20232BF915700033F38D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3C20222BF915700033F38D /* LoginView.swift */; };
 		1F3C20252BF9456F0033F38D /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3C20242BF9456F0033F38D /* RegisterView.swift */; };
+		1F3C20272BFB4B810033F38D /* LogInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3C20262BFB4B810033F38D /* LogInViewModel.swift */; };
+		1F3C20292BFF9CDE0033F38D /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3C20282BFF9CDE0033F38D /* RegisterViewModel.swift */; };
 		1FC4424C2BF4FD1B00FF7A21 /* veryfirstappApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC4424B2BF4FD1B00FF7A21 /* veryfirstappApp.swift */; };
 		1FC4424E2BF4FD1B00FF7A21 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC4424D2BF4FD1B00FF7A21 /* MainView.swift */; };
 		1FC442502BF4FD1D00FF7A21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FC4424F2BF4FD1D00FF7A21 /* Assets.xcassets */; };
@@ -23,6 +25,8 @@
 		1F20992B2BF87E74006BC4FD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1F3C20222BF915700033F38D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		1F3C20242BF9456F0033F38D /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		1F3C20262BFB4B810033F38D /* LogInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewModel.swift; sourceTree = "<group>"; };
+		1F3C20282BFF9CDE0033F38D /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 		1FC442482BF4FD1B00FF7A21 /* veryfirstapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = veryfirstapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FC4424B2BF4FD1B00FF7A21 /* veryfirstappApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = veryfirstappApp.swift; sourceTree = "<group>"; };
 		1FC4424D2BF4FD1B00FF7A21 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -64,6 +68,8 @@
 		1F3C20202BF8C0D30033F38D /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				1F3C20262BFB4B810033F38D /* LogInViewModel.swift */,
+				1F3C20282BFF9CDE0033F38D /* RegisterViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -194,6 +200,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F3C20232BF915700033F38D /* LoginView.swift in Sources */,
+				1F3C20292BFF9CDE0033F38D /* RegisterViewModel.swift in Sources */,
+				1F3C20272BFB4B810033F38D /* LogInViewModel.swift in Sources */,
 				1F3C20252BF9456F0033F38D /* RegisterView.swift in Sources */,
 				1FC4424E2BF4FD1B00FF7A21 /* MainView.swift in Sources */,
 				1FC4424C2BF4FD1B00FF7A21 /* veryfirstappApp.swift in Sources */,
