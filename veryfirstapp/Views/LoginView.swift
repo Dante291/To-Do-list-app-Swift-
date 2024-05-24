@@ -50,7 +50,8 @@ struct LoginView: View {
                                 Text("Log In").foregroundColor(Color.white)
                             }}).padding()
                     
-                }.background(colorScheme == .dark ? Color.black : Color.white)
+                }
+                .background(colorScheme == .dark ? Color.black : Color.white)
                     .scrollContentBackground(.hidden)
                 
                 //Sign In

@@ -26,7 +26,7 @@ class RegisterViewModel: ObservableObject{
             guard let userId = Authresult?.user.uid else {
                 return
             }
-            print("signed in")
+            
             self?.insertUserRecord(id: userId)
         }
         

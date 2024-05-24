@@ -15,6 +15,8 @@
 		1F3C20252BF9456F0033F38D /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3C20242BF9456F0033F38D /* RegisterView.swift */; };
 		1F3C20272BFB4B810033F38D /* LogInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3C20262BFB4B810033F38D /* LogInViewModel.swift */; };
 		1F3C20292BFF9CDE0033F38D /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3C20282BFF9CDE0033F38D /* RegisterViewModel.swift */; };
+		1F3C202C2BFFB58B0033F38D /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3C202B2BFFB58B0033F38D /* Users.swift */; };
+		1F3C202E2C00F8950033F38D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3C202D2C00F8950033F38D /* Extensions.swift */; };
 		1FC4424C2BF4FD1B00FF7A21 /* veryfirstappApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC4424B2BF4FD1B00FF7A21 /* veryfirstappApp.swift */; };
 		1FC4424E2BF4FD1B00FF7A21 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC4424D2BF4FD1B00FF7A21 /* MainView.swift */; };
 		1FC442502BF4FD1D00FF7A21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FC4424F2BF4FD1D00FF7A21 /* Assets.xcassets */; };
@@ -27,6 +29,8 @@
 		1F3C20242BF9456F0033F38D /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		1F3C20262BFB4B810033F38D /* LogInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewModel.swift; sourceTree = "<group>"; };
 		1F3C20282BFF9CDE0033F38D /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		1F3C202B2BFFB58B0033F38D /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+		1F3C202D2C00F8950033F38D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		1FC442482BF4FD1B00FF7A21 /* veryfirstapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = veryfirstapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FC4424B2BF4FD1B00FF7A21 /* veryfirstappApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = veryfirstappApp.swift; sourceTree = "<group>"; };
 		1FC4424D2BF4FD1B00FF7A21 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -51,6 +55,7 @@
 		1F3C201E2BF88B6F0033F38D /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				1F3C202B2BFFB58B0033F38D /* Users.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -80,8 +85,16 @@
 				1F20992B2BF87E74006BC4FD /* GoogleService-Info.plist */,
 				1FC4424B2BF4FD1B00FF7A21 /* veryfirstappApp.swift */,
 				1FC4424F2BF4FD1D00FF7A21 /* Assets.xcassets */,
+				1F3C202D2C00F8950033F38D /* Extensions.swift */,
 			);
 			path = others;
+			sourceTree = "<group>";
+		};
+		1F3C202A2BFFB5510033F38D /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		1FC4423F2BF4FD1B00FF7A21 = {
@@ -103,6 +116,7 @@
 		1FC4424A2BF4FD1B00FF7A21 /* veryfirstapp */ = {
 			isa = PBXGroup;
 			children = (
+				1F3C202A2BFFB5510033F38D /* New Group */,
 				1F3C20212BF8C0EB0033F38D /* others */,
 				1F3C20202BF8C0D30033F38D /* ViewModels */,
 				1F3C201F2BF8C0CB0033F38D /* Views */,
@@ -202,9 +216,11 @@
 				1F3C20232BF915700033F38D /* LoginView.swift in Sources */,
 				1F3C20292BFF9CDE0033F38D /* RegisterViewModel.swift in Sources */,
 				1F3C20272BFB4B810033F38D /* LogInViewModel.swift in Sources */,
+				1F3C202E2C00F8950033F38D /* Extensions.swift in Sources */,
 				1F3C20252BF9456F0033F38D /* RegisterView.swift in Sources */,
 				1FC4424E2BF4FD1B00FF7A21 /* MainView.swift in Sources */,
 				1FC4424C2BF4FD1B00FF7A21 /* veryfirstappApp.swift in Sources */,
+				1F3C202C2BFFB58B0033F38D /* Users.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
